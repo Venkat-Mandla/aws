@@ -1,0 +1,8 @@
+[
+{
+  Json Data transfer
+  "id":"1",
+  "name":"ABC",
+  "company":"Company"
+}
+]

@@ -1,0 +1,49 @@
+{
+	"Type": "Notification",
+	"MessageId": "9d63ed34-b336-55d8-9940-b519f950fe44",
+	"TopicArn": "arn:aws:sns:us-east-1:635214835853:file-event-process",
+	"Subject": "Amazon S3 Notification",
+	"Message": {
+		"Records": [
+			{
+				"eventVersion": "2.1",
+				"eventSource": "aws:s3",
+				"awsRegion": "us-east-1",
+				"eventTime": "2020-11-17T03:48:49.374Z",
+				"eventName": "ObjectCreated:Put",
+				"userIdentity": {
+					"principalId": "A3HAHEX6A1FWTT"
+				},
+				"requestParameters": {
+					"sourceIPAddress": "70.188.122.127"
+				},
+				"responseElements": {
+					"x-amz-request-id": "F04EB6A0CD18D7AD",
+					"x-amz-id-2": "2hlAltk/zJeVgqHNWUulELQF+PQTaw9WRriH3PILSWkGwt2RLb3O7J9HvqlCZzmOtLtd3gKMKwk9lq28XBtZ83DgyFF58NVl"
+				},
+				"s3": {
+					"s3SchemaVersion": "1.0",
+					"configurationId": "file_push_event",
+					"bucket": {
+						"name": "poc-bin-one",
+						"ownerIdentity": {
+							"principalId": "A3HAHEX6A1FWTT"
+						},
+						"arn": "arn:aws:s3:::poc-bin-one"
+					},
+					"object": {
+						"key": "test.json",
+						"size": 52,
+						"eTag": "77249e36f1c6055efe5749bdb2d5ac92",
+						"sequencer": "005FB34825BDBBED61"
+					}
+				}
+			}
+		]
+	},
+	"Timestamp": "2020-11-17T03:48:54.902Z",
+	"SignatureVersion": "1",
+	"Signature": "JPnganbKL1HGjvYzWR/Ni4yyo8CxnotssL62SkPq0sD9XVuavETxWmCoD6gLLCxWlB9rgv8pUS2L+W0KwtewfDrgO4rD4OEkPRN43XcKTWW3Kh2R7Lf/XM01g7guFKYaN722ns4p5rAa/CueMKDKQQQ6vRQ8XFCsWeKBx1hKQxiDpdn+O9e9AnJZ5nrCbOBi7rSq9wOLLEf9VNsf1423gLHF1YpGGLU/vTwQt6I8f4hSWHrgt2lznWoCeLrMDRnf23k30EziMb9AHGKN588d9i+oCuLZLFy+rmuL4QX385ydc0++DyCbYHPY8L5J2/v14OX8XH7L+ZBEQWTcdJWpuQ==",
+	"SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-a86cb10b4e1f29c941702d737128f7b6.pem",
+	"UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:635214835853:file-event-process:62b06ccc-0248-4692-b81d-726e435d557d"
+}
